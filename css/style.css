@@ -676,6 +676,136 @@ header .container .social i {
     }
 
 }
+
+/* ================================
+   transport contracts section
+================================ */
+
+.transport-contracts {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.transport-contracts .container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.tra-contracts-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.tra-contracts-title > i {
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: var(--main-color);
+}
+
+.tra-contracts-title h2 {
+    margin: 0 0 10px;
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.tra-contracts-title p {
+    margin: 0;
+    font-size: 16px;
+    color: var(--f-color);
+}
+
+.tra-contracts-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.tra-contract-box {
+    background-color: #fff;
+    padding: 30px 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tra-contract-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tra-contract-icon i {
+    font-size: 40px;
+    color: var(--main-color);
+}
+
+.tra-contract-box h3 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.tra-contract-box p {
+    margin-bottom: 25px;
+    color: var(--f-color);
+}
+
+.tra-contract-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tra-contract-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.tra-contract-btn:hover {
+    transform: translateY(-2px);
+}
+
+.tra-download-btn {
+    background-color: #eee;
+}
+
+
+/* ================================
+   mobile
+================================ */
+
+@media (max-width: 768px) {
+
+    .transport-contracts {
+        padding: 45px 15px;
+    }
+
+    .tra-contracts-title h2 {
+        font-size: 25px;
+    }
+
+    .tra-contracts-container {
+        grid-template-columns: 1fr;
+    }
+
+    .tra-contract-buttons {
+        flex-direction: column;
+    }
+
+    .tra-contract-btn {
+        width: 100%;
+    }
+}
 /* start fire types section */
 
 
@@ -1105,6 +1235,142 @@ header .container .social i {
     color: var(--f-color);
     font-size: 16px;
     margin: 0;
+}
+/* ================================
+   fire contracts section
+================================ */
+
+.fire-contracts {
+    padding: 60px 0;
+    background-color: #eff3f7;
+}
+
+.fire-contracts .container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.fire-contracts-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.fire-contracts-title > i {
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: var(--main-color);
+}
+
+.fire-contracts-title h2 {
+    margin: 0 0 10px;
+    font-size: 30px;
+    color: var(--main-color);
+
+}
+
+.fire-contracts-title p {
+    margin: 0;
+    font-size: 16px;
+    color: var(--f-color);
+
+}
+
+.fire-contracts-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.fire-contract-box {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.fire-contract-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fire-contract-icon i {
+    font-size: 38px;
+    color: var(--main-color);
+
+}
+
+.fire-contract-box h3 {
+    margin: 10px 0 25px;
+    font-size: 20px;
+    color: var(--main-color);
+
+}
+
+.fire-contract-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.fire-contract-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.fire-contract-btn:hover {
+    transform: translateY(-2px);
+}
+
+.fire-download-btn {
+    background-color: #eee;
+}
+
+
+/* ================================
+   mobile
+================================ */
+
+@media (max-width: 900px) {
+
+    .fire-contracts-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+
+    .fire-contracts {
+        padding: 45px 15px;
+    }
+
+    .fire-contracts-title h2 {
+        font-size: 25px;
+    }
+
+    .fire-contracts-container {
+        grid-template-columns: 1fr;
+    }
+
+    .fire-contract-buttons {
+        flex-direction: column;
+    }
+
+    .fire-contract-btn {
+        width: 100%;
+    }
 }
 
 /* start car style */
@@ -1587,6 +1853,147 @@ header .container .social i {
         font-size: 21px;
     }
 }
+
+/* ================================
+   car contract section
+================================ */
+
+.car-contract {
+    padding: 60px 0;
+    background-color: #eff3f7;
+}
+
+.car-contract .container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contract-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.contract-title > i {
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: var(--main-color);
+
+}
+
+.contract-title h2 {
+    margin: 0 0 10px;
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.contract-title p {
+    margin: 0;
+    font-size: 16px;
+    color: var(--f-color);
+}
+
+.contract-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contract-icon {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contract-icon i {
+    font-size: 38px;
+    color: var(--main-color);
+
+}
+
+.contract-info {
+    flex: 1;
+}
+
+.contract-info h3 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    color: var(--main-color);
+}
+
+.contract-info p {
+    margin: 0;
+    color: var(--f-color);
+}
+
+.contract-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.contract-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contract-btn:hover {
+    transform: translateY(-2px);
+}
+
+.download-btn {
+    background-color: #eee;
+}
+
+
+/* ================================
+   mobile
+================================ */
+
+@media (max-width: 768px) {
+
+    .car-contract {
+        padding: 45px 15px;
+    }
+
+    .contract-title h2 {
+        font-size: 25px;
+    }
+
+    .contract-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 20px;
+    }
+
+    .contract-info {
+        width: 100%;
+    }
+
+    .contract-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contract-btn {
+        width: 100%;
+    }
+}
 /* start health types section */
 
 
@@ -2015,6 +2422,154 @@ header .container .social i {
     color: var(--f-color);
     font-size: 16px;
     margin: 0;
+}
+/* ================================
+   individual insurance contract
+================================ */
+
+.individual-contract {
+    padding: 60px 0;
+    background-color: #eff3f7;
+}
+
+.individual-contract .container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.individual-contract-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.individual-contract-title > i {
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: var(--main-color);
+}
+
+.individual-contract-title h2 {
+    margin: 0 0 10px;
+    font-size: 30px;
+    color: var(--main-color);
+
+}
+
+.individual-contract-title p {
+    margin: 0;
+    font-size: 16px;
+    color: var(--f-color);
+
+}
+
+.individual-contract-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.individual-contract-icon {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.individual-contract-icon i {
+    font-size: 40px;
+    color: var(--main-color);
+
+}
+
+.individual-contract-info {
+    flex: 1;
+}
+
+
+
+.individual-contract-info p {
+    margin: 0;
+    color: var(--f-color);
+
+}
+
+.individual-contract-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.individual-contract-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.individual-contract-btn:hover {
+    transform: translateY(-2px);
+}
+
+.download-btn {
+    background-color: #eee;
+}
+
+
+/* ================================
+   mobile
+================================ */
+
+@media (max-width: 768px) {
+
+    .individual-contract {
+        padding: 45px 15px;
+    }
+
+    .individual-contract-title h2 {
+        font-size: 25px;
+    }
+
+    .individual-contract-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 20px;
+    }
+
+    .individual-contract-info {
+        width: 100%;
+    }
+
+    .individual-contract-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .individual-contract-btn {
+        width: 100%;
+    }
+
 }
 
 
